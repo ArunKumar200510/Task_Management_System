@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="490.0" prefWidth="721.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="application.dued_task_table">
+    <children>
+        <AnchorPane layoutY="-5.0" prefHeight="426.0" prefWidth="630.0">
+            <children>
+                <Label layoutX="249.0" prefHeight="57.0" prefWidth="186.0" text="DUED TASK">
+                    <font>
+                        <Font size="34.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="tableView" layoutX="31.0" layoutY="64.0" prefHeight="398.0" prefWidth="653.0">
+    <columns>
+        <TableColumn fx:id="taskNameCol" prefWidth="124.79999160766602" text="Task_name" />
+        <TableColumn fx:id="taskDescCol" prefWidth="273.6000213623047" text="Task_desc" />
+        <TableColumn fx:id="duedTimeCol" prefWidth="159.20001220703125" text="Dued_time" />
+        <TableColumn fx:id="progressCol" prefWidth="96.0" text="Progress" />
+    </columns>
+</TableView>
+                
+               
+                <Button onMouseClicked="#back" layoutY="16.0" mnemonicParsing="false" text="BACK" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
